@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/payment.css') }}">
+</head>
+<body class="user-login">
+    <header>
+        <h1>Payment</h1>
+    </header>
+    <main>
+        <form id="paymentForm" method="POST">
+            <label for="reg">Reg No:</label>
+            <input type="text" id="reg" name="reg" required placeholder="Enter Registration No">
+            
+            <div class="form-group">
+                <label for="bdate">Billing Date:</label>
+                <input type="date" id="bdate" name="bdate" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="edate">Ending Date:</label>
+                <input type="date" id="edate" name="edate" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <select id="amount" name="amount" required>
+                <option value="select">select</option>
+                <option value="500">GYM - 500</option>
+                <option value="700">CARDIO - 700</option>
+                <option value="900">CARDIO+GYM - 900</option>
+                </select>
+                </div>
+    
+            
+            <button type="submit">Submit Payment</button>
+        </form>
+        
+        <!-- Error message will be displayed here -->
+        <div id="error-message"></div>
+    </main>
+    
+    <script src="{{ url_for('static', filename='js/payment.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/equip.css') }}">
+</head>
+<body class="user-login">
+    <header>
+        <h1>Equipment Status</h1>
+    </header>
+    <main>
+        <form id="Trainerreg" method="POST">
+            <div class="form-group">
+                <label for="name">Equipment</label>
+                <select id="name" name="name" required>
+                <option value="select">select</option>
+                <option value="Leg press">Leg press</option>
+                <option value="Treadmill">Treadmill</option>
+                <option value="Chest press">Chest press</option>
+                <option value="Lat pulldown">Lat pulldown</option>
+                <option value="Ellipticals">Ellipticals</option>
+                <option value="Dumbbells">Dumbbells</option>
+                <option value="Bench press">Bench press</option>
+                <option value="Pullup bar">Pullup bar</option>
+                <option value="Leg curl machine">Leg curl machine</option>
+                <option value="Cable machine">Cable machine</option>
+                </select>
+            </div>
+            
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status">
+            
+            <button type="submit">Register</button>
+        </form>
+        
+        <!-- Error message will be displayed here -->
+        <div id="error-message"></div>
+    </main>
+    
+    <script src="{{ url_for('static', filename='js/equip.js') }}"></script>
+</body>
+</html>

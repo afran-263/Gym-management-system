@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History</title>
+    <link rel="stylesheet" href="static/css/payment_his.css">
+</head>
+<body>
+    <header>
+        <h1>Payment History</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Payment ID</th>
+                        <th>Date</th>
+                        <th>Reg No</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in user %}
+                        <tr>
+                            <td>{{  user[0]  }}</td>
+                            <td>{{ user[2]  }}</td>
+                            <td>{{  user[5]  }}</td>
+                            <td>{{  user[1]  }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
