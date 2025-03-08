@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-container label {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+  border-color: #4CAF50;
+}
+
+.search-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.search-container button:hover {
+  background-color: #45a049;
+}
+
+/* Results Container */
+.results-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-container .member-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.results-container .member-row:last-child {
+  border-bottom: none;
+}
+
+.results-container .member-row div {
+  flex: 1;
+  padding: 5px;
+  text-align: left;
+}
+
+.results-container .member-row div:first-child {
+  flex: 2; /* Make the name column wider */
+}
+
+/* Error Message */
+.error-message {
+  padding: 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black with transparency */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Enlarging the Select Dropdown Box */
+select#blood_group {
+  width: 100%;        /* Make the select box take full width of its container */
+  height: 40px;       /* Increase the height of the select box */
+  font-size: 18px;    /* Increase the font size */
+  padding: 5px;       /* Add some padding inside the select box */
+  border-radius: 5px; /* Round the corners */
+  border: 1px solid #ccc; /* Add a light border around the select box */
+  box-sizing: border-box;  /* Include padding and border in width calculation */
+}
+
+/* Style for Results */
+#results-container {
+  margin-top: 20px;
+}
+
+.member-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr 3fr;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.member-row.header-row {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
