@@ -1,31 +1,27 @@
-Gym Management System
+# Gym Management System
 
-Overview
+## Overview
 
 This project is a Gym Management System that helps gym owners and members manage memberships, track workouts, and handle payments efficiently. It is built using Python and includes a web-based interface.
 
-Features
+# Features
 
-Member registration and login
+- Member registration and login
 
-Membership management
+- Membership management
 
-Workout and fitness tracking
+- Workout and fitness tracking
 
-Equipment management
+- Equipment management
 
-Payment processing
+- Payment processing
 
-Directory Structure
+## Directory Structure
 
-app.py - Main application file
+- app.py - Main application file
 
-static/css/ - Contains styles for the front end
+- static/css/ - Contains styles for the front end
 
-templates/ - HTML templates for the user interface
+- templates/ - HTML templates for the user interface
 
-database/ - Stores user and gym-related data
-
-Contributing
-
-Contributions are welcome! Feel free to submit issues and pull requests
+- database/ - Stores user and gym-related data
